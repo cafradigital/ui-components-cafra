@@ -1,0 +1,35 @@
+{
+  "name": "@cafra.digital/ui-components-cafra",
+  "version": "1.0.0",
+  "description": "Biblioteca de Componentes da CAFRA Digital. Essa biblioteca de componentes tem como intuito diminuir o tempo de desenvolvimento de novos sites de clientes da CAFRA. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "deploy": "npm version patch && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cafra-Digital/ui-components-cafra.git"
+  },
+  "author": "Thiago Almeida Amorim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cafra-Digital/ui-components-cafra/issues"
+  },
+  "homepage": "https://github.com/Cafra-Digital/ui-components-cafra#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/styled-components": "^5.1.26",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.25.3",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "styled-components": "^5.3.10",
+    "typescript": "^5.1.5"
+  }
+}
