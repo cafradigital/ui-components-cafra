@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/components/button/index.tsx"],"sourcesContent":["import { FC } from 'react';\r\n\r\nexport const Button: FC = () => {\r\n    return (\r\n        <button>Teste</button>\r\n    )\r\n};"],"names":["_jsx"],"mappings":";;;;AAEa,IAAA,MAAM,GAAO,YAAA;IACtB,QACIA,cAAsB,CAAA,QAAA,EAAA,EAAA,QAAA,EAAA,OAAA,EAAA,CAAA,EACzB;AACL;;;;"}
