@@ -1,2 +1,2 @@
-import { FC } from 'react';
-export declare const Button: FC;
+import * as React from 'react';
+export declare const Button: React.FC;

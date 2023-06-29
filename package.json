@@ -20,7 +20,6 @@
   "files": [
     "dist"
   ],
-  "type": "module",
   "author": "Thiago Almeida Amorim",
   "license": "ISC",
   "bugs": {

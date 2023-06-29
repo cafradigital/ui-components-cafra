@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import * as React from 'react';
 
-export const Button: FC = () => {
+export const Button: React.FC = () => {
     return (
         <button>Teste</button>
     )
