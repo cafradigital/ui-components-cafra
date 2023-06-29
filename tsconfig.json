@@ -1,36 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+
+    "target": "es2016",
+    "esModuleInterop": true,   
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "outDir": "dist",
-    "jsx": "react-jsx",
-    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "jsx": "react",
+    "module": "ESNext",
     "declaration": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "rootDir": "src"
+  }
 }

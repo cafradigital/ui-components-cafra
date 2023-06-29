@@ -1,67 +1,45 @@
 {
-  "name": "@cafra.digital/ui-components-cafra",
-  "version": "0.1.0",
+  "name": "ui-components-cafra",
+  "version": "1.0.0",
+  "author": "Thiago Almeida Amorim (CAFRA - DTO)",
+  "description": "Essa biblioteca tem como intuito diminuir o tempo de desenvolvimento de novos sites de clientes da CAFRA e por esse motivo agrupa nela todos os componentes utilizados em cada um dos templates de sites desenvolvidos até o momento, além de estar em constante atualização já que todo novo componente é desenvolvido de forma desacoplada e inserido na mesma.",
+  "main": "dist/cjs/index.ts",
+  "module": "dist/esm/index.ts",
   "private": false,
-  "main": "dist/index.js",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.37",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
   "files": [
     "dist"
   ],
-  "author": "Thiago Almeida Amorim",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cafra-Digital/ui-components-cafra/issues"
-  },
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "deploy": "npm version patch && npm publish --access public",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "npm version patch && npm publish --access public"
+  },
+  "bugs": {
+    "url": "https://github.com/Cafra-Digital/ui-components-cafra/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cafra-Digital/ui-components-cafra.git"
   },
   "homepage": "https://github.com/Cafra-Digital/ui-components-cafra#readme",
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "keywords": [],
+  "license": "ISC",
   "devDependencies": {
-    "@types/rollup": "^0.54.0",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/react": "^18.0.21",
+    "react": "^18.2.0",
     "rollup": "^2.79.1",
-    "rollup-plugin-typescript2": "^0.35.0"
+    "rollup-plugin-dts": "^4.2.2",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
   }
 }
