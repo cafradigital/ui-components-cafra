@@ -1,7 +1,7 @@
 {
   "name": "@cafra.digital/ui-components-cafra",
   "description": "Essa biblioteca tem como intuito diminuir o tempo de desenvolvimento de novos sites de clientes da CAFRA e por esse motivo agrupa nela todos os componentes utilizados em cada um dos templates de sites desenvolvidos até o momento, além de estar em constante atualização já que todo novo componente é desenvolvido de forma desacoplada e inserido na mesma.",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -23,7 +23,6 @@
     "type": "git",
     "url": "git+https://github.com/Cafra-Digital/ui-components-cafra.git"
   },
-  
   "homepage": "https://github.com/Cafra-Digital/ui-components-cafra#readme",
   "author": "Thiago Almeida Amorim (DTO)",
   "license": "MIT",
