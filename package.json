@@ -4,9 +4,6 @@
   "version": "1.0.21",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@cafradigital"
-  },
   "files": [
     "dist"
   ],
