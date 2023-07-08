@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  publish-gpr:
+  publish-ui-components-cafra:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@cafra.digital'
+          scope: '@Cafra-Digital'
       - run: npm install
       - run: npm publish
         env:
