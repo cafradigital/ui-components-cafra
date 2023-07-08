@@ -5,7 +5,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@cafra_digital"
+    "registry": "https://npm.pkg.github.com/@Cafra-Digital"
   },
   "files": [
     "dist"
