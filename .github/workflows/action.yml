@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@Cafra-Digital'
+          scope: '@cafra_digital'
       - run: npm install
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.UI_COMPONENTS_CAFRA_SECRET}}
+          NODE_AUTH_TOKEN: ${{secrets.access_ui_components_cafra}}
