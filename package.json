@@ -1,9 +1,10 @@
 {
-  "name": "ui-components-cafra",
+  "name": "@cafra.digital/ui-components-cafra",
   "description": "Essa biblioteca tem como intuito diminuir o tempo de desenvolvimento de novos sites de clientes da CAFRA e por esse motivo agrupa nela todos os componentes utilizados em cada um dos templates de sites desenvolvidos até o momento, além de estar em constante atualização já que todo novo componente é desenvolvido de forma desacoplada e inserido na mesma.",
   "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "private": true,
   "files": [
     "dist"
   ],
@@ -15,15 +16,18 @@
     "test": "react-scripts test",
     "deploy": "npm version patch && npm publish --access public"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/Cafra-Digital/ui-components-cafra/issues"
+    "url": "https://github.com/cafra.digital/ui-components-cafra/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cafra-Digital/ui-components-cafra.git"
+    "url": "git+https://github.com/cafra.digital/ui-components-cafra.git"
   },
-  "homepage": "https://github.com/Cafra-Digital/ui-components-cafra#readme",
+  "homepage": "https://github.com/cafra.digital/ui-components-cafra#readme",
   "author": "Thiago Almeida Amorim (DTO)",
   "license": "MIT",
   "devDependencies": {
