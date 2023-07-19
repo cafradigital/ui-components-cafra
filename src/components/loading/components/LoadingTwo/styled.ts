@@ -1,20 +1,22 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../../../../ftx-multimarcas/src/GlobalStyleds';
+import { IGlobalTheme } from '../../../../../GlobalInterfaces';
 import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
     styled: ILoadingStyleds;
     theme: IGlobalTheme;
 }>`
+    z-index: 9999;
     & {
-        color: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        color: ${({ styled, theme }) =>
+            styled.color ? styled.color : theme.loading.color};
+
         font-size: ${({ styled: { size } }) => {
             switch (size) {
-                case 'Big':
-                    return '6px';
+                case 'big':
+                    return '10px';
                 case 'medium':
-                    return '4.5px';
+                    return '5px';
                 case 'small':
                     return '3px';
             }

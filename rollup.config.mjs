@@ -7,7 +7,6 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import packageJson from './package.json' assert { type: 'json' };
 
 /* ========================================================================
-
 ======================================================================== */
 // O rollup config é uma matriz de objetos config. Para esta biblioteca
 // precisamos de dois objetos de configuração separados. O primeiro exportará os

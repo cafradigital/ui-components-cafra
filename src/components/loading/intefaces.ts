@@ -1,6 +1,7 @@
 export interface ILoadingStyleds {
-    size: 'small' | 'medium' | 'Big';
+    size: 'small' | 'medium' | 'big';
     color?: string;
+    backgroundColor?: string;
 }
 
 export interface ILoadingProps extends ILoadingStyleds {

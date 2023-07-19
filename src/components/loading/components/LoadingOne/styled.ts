@@ -1,21 +1,23 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../../../../ftx-multimarcas/src/GlobalStyleds';
+import { IGlobalTheme } from '../../../../../GlobalInterfaces';
 import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
     styled: ILoadingStyleds;
     theme: IGlobalTheme;
 }>`
+    z-index: 9999;
     &,
     &:before,
     &:after {
-        background: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        background: ${({ styled, theme }) =>
+            styled.color ? styled.color : theme.loading.color};
+
         -webkit-animation: load1 1s infinite ease-in-out;
         animation: load1 1s infinite ease-in-out;
         width: ${({ styled: { size } }) => {
             switch (size) {
-                case 'Big':
+                case 'big':
                     return '1rem';
                 case 'medium':
                     return '.95rem';
@@ -25,7 +27,7 @@ export const Loading = styled.div<{
         }};
         height: ${({ styled: { size } }) => {
             switch (size) {
-                case 'Big':
+                case 'big':
                     return '3rem';
                 case 'medium':
                     return '2rem';
@@ -35,8 +37,7 @@ export const Loading = styled.div<{
         }};
     }
     & {
-        color: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        color: ${({ styled: { color }, theme }) => color || theme.mainColor};
         text-indent: -9999rem;
         position: relative;
         font-size: 11px;
@@ -67,7 +68,7 @@ export const Loading = styled.div<{
             box-shadow: 0 0;
             height: ${({ styled: { size } }) => {
                 switch (size) {
-                    case 'Big':
+                    case 'big':
                         return '3rem';
                     case 'medium':
                         return '2rem';
@@ -80,7 +81,7 @@ export const Loading = styled.div<{
             box-shadow: 0 -2rem;
             height: ${({ styled: { size } }) => {
                 switch (size) {
-                    case 'Big':
+                    case 'big':
                         return '4rem';
                     case 'medium':
                         return '3rem';
@@ -97,7 +98,7 @@ export const Loading = styled.div<{
             box-shadow: 0 0;
             height: ${({ styled: { size } }) => {
                 switch (size) {
-                    case 'Big':
+                    case 'big':
                         return '3rem';
                     case 'medium':
                         return '2rem';
@@ -110,7 +111,7 @@ export const Loading = styled.div<{
             box-shadow: 0 -2rem;
             height: ${({ styled: { size } }) => {
                 switch (size) {
-                    case 'Big':
+                    case 'big':
                         return '4rem';
                     case 'medium':
                         return '3rem';

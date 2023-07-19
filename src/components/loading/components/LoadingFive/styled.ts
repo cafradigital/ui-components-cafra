@@ -1,11 +1,13 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../../../../ftx-multimarcas/src/GlobalStyleds';
+import { IGlobalTheme } from '../../../../../GlobalInterfaces';
 import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
     styled: ILoadingStyleds;
     theme: IGlobalTheme;
 }>`
+    z-index: 9999;
+
     &,
     &:before,
     &:after {
@@ -18,11 +20,11 @@ export const Loading = styled.div<{
         animation: load7 1.8s infinite ease-in-out;
     }
     & {
-        color: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        color: ${({ styled, theme }) =>
+            styled.color ? styled.color : theme.loading.color};
         font-size: ${({ styled: { size } }) => {
             switch (size) {
-                case 'Big':
+                case 'big':
                     return '6px';
                 case 'medium':
                     return '4.5px';
@@ -30,7 +32,6 @@ export const Loading = styled.div<{
                     return '3px';
             }
         }};
-        margin: 80px auto;
         position: relative;
         text-indent: -9999em;
         -webkit-transform: translateZ(0);
